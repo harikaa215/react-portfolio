@@ -1,29 +1,29 @@
 :root {
-  /* Professional Color Palette */
-  --primary-color: #1a365d;
-  --primary-light: #2c5282;
-  --primary-dark: #0f2744;
-  --accent-color: #4299e1;
-  --accent-hover: #3182ce;
+  /* Magenta & Black Color Palette */
+  --primary-color: #1a1a1a;
+  --primary-light: #2d2d2d;
+  --primary-dark: #0a0a0a;
+  --accent-color: #8b4773;
+  --accent-hover: #7a3d65;
   
   /* Neutral Colors */
   --bg-primary: #ffffff;
-  --bg-secondary: #f7fafc;
-  --bg-tertiary: #edf2f7;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --text-muted: #718096;
-  --border-color: #e2e8f0;
+  --bg-secondary: #faf8f9;
+  --bg-tertiary: #f5f0f3;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #717171;
+  --border-color: #e8e0e5;
   
   /* Accent Colors for Tags */
-  --tag-bg: #ebf8ff;
-  --tag-text: #2b6cb0;
+  --tag-bg: #f9f0f6;
+  --tag-text: #8b4773;
   --success-color: #38a169;
   --warning-color: #d69e2e;
   
   /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-primary: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Nunito', Georgia, serif;
   
   /* Spacing */
   --section-gap: 1.5rem;
@@ -122,14 +122,25 @@ ul {
 
 /* Print Styles */
 @media print {
-  body {
+  html, body {
     background: white;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
   
   .resume-container {
     box-shadow: none;
     max-width: 100%;
+  }
+
+  h2, h3, p, li {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.5rem !important;
   }
 }

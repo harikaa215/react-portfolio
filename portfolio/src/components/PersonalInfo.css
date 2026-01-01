@@ -51,3 +51,45 @@
     grid-template-columns: 1fr;
   }
 }
+
+.info-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.info-icon span:first-child {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  min-width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-30deg);
+  font-size: 1.4rem !important;
+  line-height: 1;
+}
+
+.info-icon a {
+  color: var(--text-primary);
+}
+
+@media print {
+  .personal-info {
+    margin-bottom: 0.5rem;
+  }
+
+  .info-icon {
+    font-size: 0.8rem;
+  }
+}

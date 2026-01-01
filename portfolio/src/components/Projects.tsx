@@ -71,35 +71,26 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <section className="projects">
-      <h2 className="section-title">
-        <svg className="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
-        </svg>
-        Projects
-      </h2>
-      
       <div className="projects-list">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <div className="project-header">
-              <div className="project-title-row">
-                <h3 className="project-name">{project.name}</h3>
+            <div className="project-left">
+              <div className="project-header">
                 <span className="project-number">0{index + 1}</span>
+                <h3 className="project-name">{project.name}</h3>
               </div>
               <span className="project-period">{project.period}</span>
+              <div className="project-tech">
+                {project.technologies.map((tech, techIndex) => (
+                  <span key={techIndex} className="tech-badge">{tech}</span>
+                ))}
+              </div>
             </div>
             
-            <p className="project-description">{project.description}</p>
-            
-            <div className="project-tech">
-              {project.technologies.map((tech, techIndex) => (
-                <span key={techIndex} className="tech-badge">{tech}</span>
-              ))}
-            </div>
-            
-            <div className="project-responsibilities">
+            <div className="project-right">
+              <p className="project-description">{project.description}</p>
               <h4 className="responsibilities-title">Key Contributions:</h4>
-              <ul>
+              <ul className="responsibilities-list">
                 {project.responsibilities.map((resp, respIndex) => (
                   <li key={respIndex}>{resp}</li>
                 ))}

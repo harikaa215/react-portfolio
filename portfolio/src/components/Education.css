@@ -104,3 +104,27 @@
     gap: 0.75rem;
   }
 }
+
+@media print {
+  .education {
+    margin-bottom: 0;
+  }
+
+  .education-item {
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .degree {
+    font-size: 0.85rem;
+  }
+
+  .institution {
+    font-size: 0.8rem;
+  }
+
+  .education-details li {
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem;
+  }
+}

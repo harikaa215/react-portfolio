@@ -16,7 +16,7 @@
 }
 
 .category-title {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color);
   margin-bottom: 0.4rem;
@@ -46,7 +46,7 @@
   color: var(--tag-text);
   padding: 0.3rem 0.6rem;
   border-radius: 9999px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid rgba(66, 153, 225, 0.15);
   transition: all 0.2s ease;
@@ -67,5 +67,26 @@
   .skill-item {
     font-size: 0.75rem;
     padding: 0.3rem 0.6rem;
+  }
+}
+
+@media print {
+  .skills {
+    margin-bottom: 0;
+  }
+
+  .skill-category {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .category-name {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-item {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
   }
 }

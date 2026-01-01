@@ -144,3 +144,28 @@
     gap: 0.75rem;
   }
 }
+
+@media print {
+  .work-experience {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-item {
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .company-name {
+    font-size: 0.85rem;
+  }
+
+  .job-title {
+    font-size: 0.8rem;
+  }
+
+  .responsibilities li {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
