@@ -1,0 +1,49 @@
+.footer {
+  background: linear-gradient(135deg, #2d2d2d 0%, #a55d87 100%);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer a {
+  color: white;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.github-icon {
+  vertical-align: middle;
+}
+
+@media print {
+  .footer {
+    background: #2d2d2d !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.55rem;
+    margin-top: auto;
+  }
+
+  .github-icon {
+    width: 10px;
+    height: 10px;
+  }
+}

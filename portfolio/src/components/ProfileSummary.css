@@ -49,16 +49,16 @@
 
 @media print {
   .profile-summary {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
 
   .summary-list {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.75rem;
   }
 
   .summary-point {
-    font-size: 0.8rem;
-    padding: 0.2rem 0;
-    line-height: 1.4;
+    font-size: 0.7rem;
+    padding: 0.1rem 0 0.1rem 0.75rem;
+    line-height: 1.3;
   }
 }

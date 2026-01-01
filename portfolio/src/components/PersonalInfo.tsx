@@ -18,19 +18,6 @@ const PersonalInfo = () => {
       </h2>
 
       <div className="info-grid">
-        <div className="info-item">
-          <span className="info-label">Full Name</span>
-          <span className="info-value">Harika A</span>
-        </div>
-        <div className="info-item">
-          <span className="info-label">Current Role</span>
-          <span className="info-value">Software Engineer III</span>
-        </div>
-        <div className="info-item">
-          <span className="info-label">Current Company</span>
-          <span className="info-value">JP Morgan Chase & Co.</span>
-        </div>
-        <br/>
         <div className="info-icon">
           <span>✉</span>
           <span className="info-value">msgtoharikaa@gmail.com</span>
@@ -50,6 +37,20 @@ const PersonalInfo = () => {
               rel="noopener noreferrer"
             >
               harikareddy215
+            </a>
+          </span>
+        </div>
+        <div className="info-icon">
+          <span>
+            <i className="fab fa-github"> </i>
+          </span>
+          <span className="info-value">
+            <a
+              href="https://github.com/harikaa215"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              harikaa215
             </a>
           </span>
         </div>

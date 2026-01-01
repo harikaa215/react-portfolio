@@ -12,7 +12,6 @@
   padding: 1rem;
   background: var(--bg-secondary);
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--accent-color);
   transition: box-shadow 0.2s ease;
 }
 
@@ -110,21 +109,33 @@
     margin-bottom: 0;
   }
 
+  .education-list {
+    gap: 0.25rem;
+  }
+
   .education-item {
-    margin-bottom: 0.4rem;
-    padding-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    padding: 0.3rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
   }
 
   .degree {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
+  }
+
+  .year {
+    font-size: 0.65rem;
   }
 
   .institution {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .education-details li {
-    font-size: 0.75rem;
-    margin-bottom: 0.2rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.1rem;
+    line-height: 1.3;
   }
 }

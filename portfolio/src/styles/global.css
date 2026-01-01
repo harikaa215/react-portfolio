@@ -122,8 +122,15 @@ ul {
 
 /* Print Styles */
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
   html, body {
     background: white;
+    width: 210mm;
+    height: 297mm;
     margin: 0;
     padding: 0;
     -webkit-print-color-adjust: exact !important;
@@ -131,8 +138,11 @@ ul {
   }
   
   .resume-container {
-    box-shadow: none;
-    max-width: 100%;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
   }
 
   h2, h3, p, li {
@@ -142,5 +152,6 @@ ul {
 
   .section-title {
     margin-bottom: 0.5rem !important;
+    break-after: avoid;
   }
 }

@@ -4,7 +4,6 @@ interface ExperienceItem {
   company: string
   role: string
   period: string
-  location?: string
   responsibilities?: string[]
   technologies?: string[]
 }
@@ -13,26 +12,22 @@ const experiences: ExperienceItem[] = [
   {
     company: "JP Morgan Chase & Co.",
     role: "Software Engineer III",
-    period: "July 2024 - Present",
-    location: "Bangalore"
+    period: "July 2024 - Present"
   },
   {
     company: "IG Infotech India Pvt. Ltd.",
     role: "UI Developer",
-    period: "Oct 2021 - June 2024",
-    location: "Bangalore"
+    period: "Oct 2021 - June 2024"
   },
   {
     company: "Collabera Technologies",
     role: "Software Developer",
-    period: "Sep 2019 - July 2021",
-    location: "Bangalore"
+    period: "Sep 2019 - July 2021"
   },
   {
     company: "Huawei Technologies",
     role: "Automation Engineer",
-    period: "Sep 2016 - Sep 2019",
-    location: "Bangalore"
+    period: "Sep 2016 - Sep 2019"
   }
 ]
 
@@ -65,15 +60,6 @@ const WorkExperience = () => {
                   </svg>
                   {exp.period}
                 </span>
-                {exp.location && (
-                  <span className="location">
-                    <svg className="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    {exp.location}
-                  </span>
-                )}
               </div>
             </div>
             

@@ -4,11 +4,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="header-main">
-          <h1 className="name">Harika A</h1>
-          <p className="title">Software Engineer III | UI Developer</p>
-        </div>
-        <div className="header-contact">
+        <h1 className="name">Harika A</h1>
+        <div className="header-info-row">
+          <p className="title">Software Engineer III</p>
           <div className="contact-item">
             <svg className="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>

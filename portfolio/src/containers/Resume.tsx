@@ -5,6 +5,7 @@ import Education from '../components/Education'
 import ProfileSummary from '../components/ProfileSummary'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
+import Footer from '../components/Footer'
 import './Resume.css'
 
 const Resume = () => {
@@ -18,7 +19,9 @@ const Resume = () => {
           {/* Left Column - Personal Details, Work Experience, Education */}
           <div className="resume-column left-column">
             <PersonalInfo />
+            <div className="section-spacer"></div>
             <WorkExperience />
+            <div className="section-spacer"></div>
             <Education />
           </div>
           
@@ -28,6 +31,7 @@ const Resume = () => {
             <Skills />
           </div>
         </div>
+        <Footer />
       </div>
 
       {/* Page 2 */}
@@ -38,6 +42,7 @@ const Resume = () => {
         <div className="page-2-content">
           <Projects />
         </div>
+        <Footer />
       </div>
     </div>
   )

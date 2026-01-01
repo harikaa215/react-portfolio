@@ -6,15 +6,8 @@
 
 .header-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.header-main {
-  flex: 1;
-  min-width: 280px;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .name {
@@ -22,8 +15,15 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   letter-spacing: -0.5px;
+}
+
+.header-info-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .title {
@@ -31,13 +31,14 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
-.header-contact {
+.header-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: flex-end;
+  align-items: center;
 }
 
 .contact-item {
@@ -76,7 +77,6 @@
   }
   
   .header-content {
-    flex-direction: column;
     align-items: flex-start;
   }
   
@@ -84,9 +84,10 @@
     font-size: 2rem;
   }
   
-  .header-contact {
-    justify-content: flex-start;
-    width: 100%;
+  .header-info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
   
   .contact-item {
@@ -97,23 +98,36 @@
 
 @media print {
   .header {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     background: linear-gradient(135deg, #2d2d2d 0%, #a55d87 100%) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
   .name {
-    font-size: 1.75rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.15rem;
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .header-info-row {
+    gap: 0.5rem;
+  }
+
+  .header-badges {
+    gap: 0.35rem;
   }
 
   .contact-item {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .contact-icon {
+    width: 12px;
+    height: 12px;
   }
 }

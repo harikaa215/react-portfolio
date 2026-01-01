@@ -37,11 +37,10 @@ const Education = () => {
           <div key={index} className="education-item">
             <div className="education-header">
               <div className="degree-info">
-                <h3 className="degree">{edu.degree}</h3>
+                <h3 className="degree">{edu.degree} {edu.period && <span className="year">({edu.period})</span>}</h3>
                 <p className="institution">{edu.institution}</p>
               </div>
               <div className="education-meta">
-                {edu.period && <span className="period">{edu.period}</span>}
                 {edu.gpa && <span className="gpa">{edu.gpa}</span>}
               </div>
             </div>

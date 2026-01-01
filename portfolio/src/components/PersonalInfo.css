@@ -1,5 +1,5 @@
 .personal-info {
-  margin-bottom: var(--section-gap);
+  margin-bottom: calc(var(--section-gap) + 1rem);
 }
 
 .section-title {
@@ -86,10 +86,22 @@
 
 @media print {
   .personal-info {
+    margin-bottom: 0.3rem;
+  }
+
+  .section-title {
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
   }
 
   .info-icon {
+    font-size: 0.65rem;
+    gap: 0.25rem;
+  }
+
+  .info-icon span:first-child {
     font-size: 0.8rem;
+    min-width: 1rem;
   }
 }

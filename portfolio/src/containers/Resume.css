@@ -16,6 +16,12 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-1 .resume-content {
+  flex: 1;
 }
 
 .page-2-header {
@@ -80,20 +86,21 @@
 @media print {
   @page {
     size: A4;
-    margin: 5mm;
+    margin: 0;
   }
 
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  body {
+    background-color: white;
   }
 
   .resume-wrapper {
+    display: block;
     padding: 0;
     margin: 0;
     background: white;
     gap: 0;
     min-height: auto;
+    width: 210mm;
   }
   
   .resume-container {
@@ -101,27 +108,37 @@
     border-radius: 0;
     width: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
     page-break-after: always;
     break-after: page;
-    margin: 0;
+    min-height: 297mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .resume-container:last-child {
-    page-break-after: avoid;
-    break-after: avoid;
+    page-break-after: auto;
+    break-after: auto;
+    min-height: auto;
   }
   
   .resume-content {
+    display: grid;
     grid-template-columns: 30% 70%;
+    flex: 1;
   }
   
   .left-column,
   .right-column {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem;
   }
 
   .left-column {
-    background: #f5f5f5 !important;
+    background: #f8f9fa !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .right-column {
@@ -129,10 +146,31 @@
   }
 
   .page-2-header {
-    padding: 0.75rem 1rem;
+    padding: 1rem 2rem;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .page-2-content {
-    padding: 0.75rem 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .page-2 {
+    page-break-after: auto;
+    break-after: auto;
+    min-height: auto;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+.section-spacer {
+  height: 1.5rem;
+}
+
+@media print {
+  .section-spacer {
+    height: 1rem !important;
+    display: block !important;
   }
 }
