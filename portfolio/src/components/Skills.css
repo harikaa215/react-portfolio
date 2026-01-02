@@ -73,6 +73,7 @@
 @media print {
   .skills {
     margin-bottom: 0;
+    flex: 1;
   }
 
   .skills-grid {
